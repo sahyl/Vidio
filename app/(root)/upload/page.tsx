@@ -29,7 +29,7 @@ const uploadFileToBunny = async (
     if (!response.ok) throw new Error("Upload Failed");
   });
 };
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const [videoDuration, setVideoDuration] = useState<number | null>(0);
 
@@ -214,4 +214,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
